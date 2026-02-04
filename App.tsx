@@ -101,17 +101,6 @@ const PromoSlider = () => {
               </div>
             </div>
           ))}
-          
-          {/* Indicators */}
-          <div className="absolute bottom-6 left-8 md:left-16 z-30 flex gap-3">
-             {slides.map((_, idx) => (
-               <button 
-                 key={idx}
-                 onClick={() => setCurrentSlide(idx)}
-                 className={`h-1.5 rounded-full transition-all duration-300 ${currentSlide === idx ? 'w-12 bg-brand-orange' : 'w-3 bg-white/40 hover:bg-white'}`}
-               />
-             ))}
-          </div>
         </div>
       </div>
     </div>
